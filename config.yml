@@ -6,6 +6,7 @@
 #
 # GITHUB_API_TOKEN=xxxxx
 #
+host: 127.0.0.1
 port: 5000
 
 # define duration between each dashboard rotation (ms)
