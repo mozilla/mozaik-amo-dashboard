@@ -10,14 +10,15 @@ host: 127.0.0.1
 port: 5000
 
 # define duration between each dashboard rotation (ms)
-rotationDuration: 10000
+rotationDuration: 15000
 # define the interval used by Mozaïk Bus to call registered APIs
 apisPollInterval: 100000
+pollInterval: 100000
 
 dashboards:
 - columns: 4
   rows:    3
-  title:   AMO Dashboard
+  title:   addons
   widgets:
 
   - extension:    github
@@ -26,6 +27,125 @@ dashboards:
     rows:         1
     x:            0
     y:            2
+
+  - extension:    github
+    widget:       Count
+    title:        Untriaged Issues
+    term:         repo%3Amozilla%2Faddons%20is%3Aissue%20is%3Aopen%20-label%3Atriaged
+    warnLimit:    15
+    columns:      1
+    rows:         1
+    x:            1
+    y:            0
+
+  - extension:    github
+    widget:       Count
+    title:        Open PRS
+    term:         repo%3Amozilla%2Faddons%20is%3Apr%20is%3Aopen
+    warnLimit:    15
+    columns:      1
+    rows:         1
+    x:            2
+    y:            0
+
+  - extension:    github
+    widget:       Count
+    title:        Open P1s
+    term:         repo%3Amozilla%2Faddons%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
+    warnLimit:    1
+    columns:      1
+    rows:         1
+    x:            1
+    y:            1
+
+  - extension:    github
+    widget:       Count
+    title:        Open P2s
+    term:         repo%3Amozilla%2Faddons%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
+    warnLimit:    1
+    columns:      1
+    rows:         1
+    x:            2
+    y:            1
+
+  - extension:    travis
+    widget:       Repository
+    owner:        mozilla
+    repository:   addons
+    columns:      1
+    rows:         1
+    x:            0
+    y:            0
+
+  - extension:   travis
+    widget:      BuildHistogram
+    owner:       mozilla
+    repository:  addons
+    columns:     2
+    rows:        1
+    x:           1
+    y:           2
+
+  - extension:   travis
+    widget:      BuildHistory
+    owner:       mozilla
+    repository:  addons
+    columns:     1
+    rows:        3
+    x:           3
+    y:           0
+
+- columns: 4
+  rows:    3
+  title:   addons-server
+  widgets:
+
+  - extension:    github
+    widget:       Status
+    columns:      1
+    rows:         1
+    x:            0
+    y:            2
+
+  - extension:    github
+    widget:       Count
+    title:        Untriaged Issues
+    term:         repo%3Amozilla%2Faddons-server%20is%3Aissue%20is%3Aopen%20-label%3Atriaged
+    warnLimit:    15
+    columns:      1
+    rows:         1
+    x:            1
+    y:            0
+
+  - extension:    github
+    widget:       Count
+    title:        Open PRS
+    term:         repo%3Amozilla%2Faddons-server%20is%3Apr%20is%3Aopen
+    warnLimit:    15
+    columns:      1
+    rows:         1
+    x:            2
+    y:            0
+
+  - extension:    github
+    widget:       Count
+    title:        Open P1s
+    term:         repo%3Amozilla%2Faddons-server%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
+    warnLimit:    1
+    columns:      1
+    rows:         1
+    x:            1
+    y:            1
+
+  - extension:    github
+    widget:       Count
+    title:        Open P2s
+    term:         repo%3Amozilla%2Faddons-server%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
+    warnLimit:    1
+    columns:      1
+    rows:         1
+    x:            2
+    y:            1
 
   - extension:    travis
     widget:       Repository
@@ -49,6 +169,164 @@ dashboards:
     widget:      BuildHistory
     owner:       mozilla
     repository:  addons-server
+    columns:     1
+    rows:        3
+    x:           3
+    y:           0
+
+- columns: 4
+  rows:    3
+  title:   Addons-frontend
+  widgets:
+
+  - extension:    github
+    widget:       Status
+    columns:      1
+    rows:         1
+    x:            0
+    y:            2
+
+  - extension:    github
+    widget:       Count
+    title:        Untriaged Issues
+    term:         repo%3Amozilla%2Faddons-frontend%20is%3Aissue%20is%3Aopen%20-label%3Atriaged
+    warnLimit:    15
+    columns:      1
+    rows:         1
+    x:            1
+    y:            0
+
+  - extension:    github
+    widget:       Count
+    title:        Open PRS
+    term:         repo%3Amozilla%2Faddons-frontend%20is%3Apr%20is%3Aopen
+    warnLimit:    15
+    columns:      1
+    rows:         1
+    x:            2
+    y:            0
+
+  - extension:    github
+    widget:       Count
+    title:        Open P1s
+    term:         repo%3Amozilla%2Faddons-frontend%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
+    warnLimit:    1
+    columns:      1
+    rows:         1
+    x:            1
+    y:            1
+
+  - extension:    github
+    widget:       Count
+    title:        Open P2s
+    term:         repo%3Amozilla%2Faddons-frontend%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
+    warnLimit:    1
+    columns:      1
+    rows:         1
+    x:            2
+    y:            1
+
+  - extension:    travis
+    widget:       Repository
+    owner:        mozilla
+    repository:   addons-frontend
+    columns:      1
+    rows:         1
+    x:            0
+    y:            0
+
+  - extension:   travis
+    widget:      BuildHistogram
+    owner:       mozilla
+    repository:  addons-frontend
+    columns:     2
+    rows:        1
+    x:           1
+    y:           2
+
+  - extension:   travis
+    widget:      BuildHistory
+    owner:       mozilla
+    repository:  addons-frontend
+    columns:     1
+    rows:        3
+    x:           3
+    y:           0
+
+- columns: 4
+  rows:    3
+  title:   addons-linter
+  widgets:
+
+  - extension:    github
+    widget:       Status
+    columns:      1
+    rows:         1
+    x:            0
+    y:            2
+
+  - extension:    github
+    widget:       Count
+    title:        Untriaged Issues
+    term:         repo%3Amozilla%2Faddons-linter%20is%3Aissue%20is%3Aopen%20-label%3Atriaged
+    warnLimit:    15
+    columns:      1
+    rows:         1
+    x:            1
+    y:            0
+
+  - extension:    github
+    widget:       Count
+    title:        Open PRS
+    term:         repo%3Amozilla%2Faddons-linter%20is%3Apr%20is%3Aopen
+    warnLimit:    15
+    columns:      1
+    rows:         1
+    x:            2
+    y:            0
+
+  - extension:    github
+    widget:       Count
+    title:        Open P1s
+    term:         repo%3Amozilla%2Faddons-linter%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
+    warnLimit:    1
+    columns:      1
+    rows:         1
+    x:            1
+    y:            1
+
+  - extension:    github
+    widget:       Count
+    title:        Open P2s
+    term:         repo%3Amozilla%2Faddons-linter%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
+    warnLimit:    1
+    columns:      1
+    rows:         1
+    x:            2
+    y:            1
+
+  - extension:    travis
+    widget:       Repository
+    owner:        mozilla
+    repository:   addons-linter
+    columns:      1
+    rows:         1
+    x:            0
+    y:            0
+
+  - extension:   travis
+    widget:      BuildHistogram
+    owner:       mozilla
+    repository:  addons-linter
+    columns:     2
+    rows:        1
+    x:           1
+    y:           2
+
+  - extension:   travis
+    widget:      BuildHistory
+    owner:       mozilla
+    repository:  addons-linter
     columns:     1
     rows:        3
     x:           3
