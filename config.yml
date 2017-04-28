@@ -13,7 +13,6 @@ port: 5000
 rotationDuration: 15000
 # define the interval used by Mozaïk Bus to call registered APIs
 apisPollInterval: 100000
-pollInterval: 100000
 
 dashboards:
 - columns: 4
