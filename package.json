@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "pushd node_modules/mozaik && yarn install && yarn build && popd && pushd node_modules/mozaik-ext-github && yarn install && yarn build && popd && react-scripts build",
+    "build": "cd node_modules/mozaik && yarn install && yarn build && cd ../mozaik-ext-github && yarn install && yarn build && cd ../../ && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "postinstall": "npm run build"
