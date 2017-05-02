@@ -15,13 +15,13 @@ modifying config files, you can use `export`:
 
 ``` sh
 export GITHUB_API_TOKEN="xxxxx"
-node server.js config-github.yml
+node server.js config.yml
 ```
 
 or prepend it to the command:
 
 ``` sh
-GITHUB_API_TOKEN="xxxxx" node server.js config-github.yml
+GITHUB_API_TOKEN="xxxxx" node server.js config.yml
 ```
 
 or create an `.env` file if you want a more permanent solution:
@@ -29,7 +29,7 @@ or create an `.env` file if you want a more permanent solution:
 ``` sh
 # .env
 GITHUB_API_TOKEN=xxxxx
-node server.js config-github.yml
+node server.js config.yml
 ```
 
 Note that `.env` file is in `.gitignore` to prevent pushing

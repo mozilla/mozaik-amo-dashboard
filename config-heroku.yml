@@ -1,19 +1,14 @@
-#
-# mozaik generic demo dashboard
-#
-# It's not required, but you should add this env var,
-# without it, you'll probably reach the API rate limit.
-#
-# GITHUB_API_TOKEN=xxxxx
-#
-host: 127.0.0.1
-port: 5000
+# Heroku config
+
+#host: 127.0.0.1
+#port: 5000
+socketPath: /tmp/nginx.socket
 
 # define duration between each dashboard rotation (seconds)
 rotationDuration: 60
 # define the interval used by Mozaïk Bus to call registered APIs
 apisPollInterval: 100000
-useWssConnection: false
+useWssConnection: true
 
 dashboards:
 - columns: 4

@@ -20,7 +20,7 @@
     "d3": "4.2.6",
     "dotenv": "^2.0.0",
     "font-awesome": "^4.7.0",
-    "mozaik": "git+https://github.com/muffinresearch/mozaik.git#4883d2f20fcf69ae0b665e33d75be81d46df78ce",
+    "mozaik": "git+https://github.com/muffinresearch/mozaik.git#a8bb9683ab27860a10c846857deb21d24310ead4",
     "mozaik-ext-github": "git+https://github.com/muffinresearch/mozaik-ext-github.git#d6362cceca98680c4ffe832755c21f4b5bbadf89",
     "mozaik-ext-travis": "^2.0.0-alpha.2",
     "mozaik-themes": "^1.0.0-alpha.1",
