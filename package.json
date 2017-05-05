@@ -21,7 +21,7 @@
     "dotenv": "^2.0.0",
     "font-awesome": "^4.7.0",
     "mozaik": "git+https://github.com/muffinresearch/mozaik.git#a8bb9683ab27860a10c846857deb21d24310ead4",
-    "mozaik-ext-github": "git+https://github.com/muffinresearch/mozaik-ext-github.git#d6362cceca98680c4ffe832755c21f4b5bbadf89",
+    "mozaik-ext-github": "git+https://github.com/muffinresearch/mozaik-ext-github.git#4534839c8c2efb7f69ecc0c1b99a9e68810ceec0",
     "mozaik-ext-travis": "^2.0.0-alpha.2",
     "mozaik-themes": "^1.0.0-alpha.1",
     "nivo": "^1.0.0-alpha.8",

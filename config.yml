@@ -32,6 +32,7 @@ dashboards:
     widget:       Count
     title:        Untriaged Issues
     term:         repo%3Amozilla%2Faddons%20is%3Aissue%20is%3Aopen%20-label%3Atriaged
+    link:         https://github.com/mozilla/addons/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20-label%3Atriaged
     warnLimit:    15
     columns:      1
     rows:         1
@@ -42,6 +43,7 @@ dashboards:
     widget:       Count
     title:        Open PRS
     term:         repo%3Amozilla%2Faddons%20is%3Apr%20is%3Aopen
+    link:         https://github.com/mozilla/addons/issues?utf8=%E2%9C%93&q=is%3Apr%20is%3Aopen
     warnLimit:    15
     columns:      1
     rows:         1
@@ -52,6 +54,7 @@ dashboards:
     widget:       Count
     title:        Open P1s
     term:         repo%3Amozilla%2Faddons%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
+    link:         https://github.com/mozilla/addons/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
     warnLimit:    1
     columns:      1
     rows:         1
@@ -62,6 +65,7 @@ dashboards:
     widget:       Count
     title:        Open P2s
     term:         repo%3Amozilla%2Faddons%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
+    link:         https://github.com/mozilla/addons/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
     warnLimit:    1
     columns:      1
     rows:         1
@@ -111,6 +115,7 @@ dashboards:
     widget:       Count
     title:        Untriaged Issues
     term:         repo%3Amozilla%2Faddons-server%20is%3Aissue%20is%3Aopen%20-label%3Atriaged
+    link:         https://github.com/mozilla/addons-server/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20-label%3Atriaged
     warnLimit:    15
     columns:      1
     rows:         1
@@ -121,6 +126,7 @@ dashboards:
     widget:       Count
     title:        Open PRS
     term:         repo%3Amozilla%2Faddons-server%20is%3Apr%20is%3Aopen
+    link:         https://github.com/mozilla/addons-server/issues?utf8=%E2%9C%93&q=is%3Apr%20is%3Aopen
     warnLimit:    15
     columns:      1
     rows:         1
@@ -131,6 +137,7 @@ dashboards:
     widget:       Count
     title:        Open P1s
     term:         repo%3Amozilla%2Faddons-server%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
+    link:         https://github.com/mozilla/addons-server/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
     warnLimit:    1
     columns:      1
     rows:         1
@@ -141,6 +148,7 @@ dashboards:
     widget:       Count
     title:        Open P2s
     term:         repo%3Amozilla%2Faddons-server%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
+    link:         https://github.com/mozilla/addons-server/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
     warnLimit:    1
     columns:      1
     rows:         1
@@ -190,6 +198,7 @@ dashboards:
     widget:       Count
     title:        Untriaged Issues
     term:         repo%3Amozilla%2Faddons-frontend%20is%3Aissue%20is%3Aopen%20-label%3Atriaged
+    link:         https://github.com/mozilla/addons-frontend/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20-label%3Atriaged
     warnLimit:    15
     columns:      1
     rows:         1
@@ -200,6 +209,7 @@ dashboards:
     widget:       Count
     title:        Open PRS
     term:         repo%3Amozilla%2Faddons-frontend%20is%3Apr%20is%3Aopen
+    link:         https://github.com/mozilla/addons-frontend/issues?utf8=%E2%9C%93&q=is%3Apr%20is%3Aopen
     warnLimit:    15
     columns:      1
     rows:         1
@@ -210,6 +220,7 @@ dashboards:
     widget:       Count
     title:        Open P1s
     term:         repo%3Amozilla%2Faddons-frontend%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
+    link:         https://github.com/mozilla/addons-frontend/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
     warnLimit:    1
     columns:      1
     rows:         1
@@ -220,6 +231,7 @@ dashboards:
     widget:       Count
     title:        Open P2s
     term:         repo%3Amozilla%2Faddons-frontend%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
+    link:         https://github.com/mozilla/addons-frontend/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
     warnLimit:    1
     columns:      1
     rows:         1
@@ -269,6 +281,7 @@ dashboards:
     widget:       Count
     title:        Untriaged Issues
     term:         repo%3Amozilla%2Faddons-linter%20is%3Aissue%20is%3Aopen%20-label%3Atriaged
+    link:         https://github.com/mozilla/addons-linter/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20-label%3Atriaged
     warnLimit:    15
     columns:      1
     rows:         1
@@ -279,6 +292,7 @@ dashboards:
     widget:       Count
     title:        Open PRS
     term:         repo%3Amozilla%2Faddons-linter%20is%3Apr%20is%3Aopen
+    link:         https://github.com/mozilla/addons-linter/issues?utf8=%E2%9C%93&q=is%3Apr%20is%3Aopen
     warnLimit:    15
     columns:      1
     rows:         1
@@ -289,6 +303,7 @@ dashboards:
     widget:       Count
     title:        Open P1s
     term:         repo%3Amozilla%2Faddons-linter%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
+    link:         https://github.com/mozilla/addons-linter/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p1%22
     warnLimit:    1
     columns:      1
     rows:         1
@@ -299,6 +314,7 @@ dashboards:
     widget:       Count
     title:        Open P2s
     term:         repo%3Amozilla%2Faddons-linter%20is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
+    link:         https://github.com/mozilla/addons-linter/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22priority:%20p2%22
     warnLimit:    1
     columns:      1
     rows:         1
