@@ -1,5 +1,7 @@
 # Mozaïk amo dashboard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mozilla/mozaik-amo-dashboard.svg)](https://greenkeeper.io/)
+
 AMO Dashboard based on mozaik-demo.
 
 ## Running locally
